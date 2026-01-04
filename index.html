@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Nichanametla | Portfolio</title>
+
+    <style>
+         :root {
+            --bg: #0a192f;
+            --card: #112240;
+            --text: #ccd6f6;
+            --accent: #64ffda;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, sans-serif;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+        /* HEADER */
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 25, 47, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 8%;
+        }
+        
+        header h1 {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        nav a {
+            margin-left: 16px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        /* HERO */
+        
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 8%;
+        }
+        
+        .hero h2 {
+            font-size: 2.4rem;
+            animation: fadeUp 1s ease;
+        }
+        
+        .hero h3 {
+            color: var(--accent);
+            margin: 8px 0;
+            animation: fadeUp 1.3s ease;
+        }
+        
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+            opacity: 0.9;
+            animation: fadeUp 1.6s ease;
+        }
+        /* SECTIONS */
+        
+        section {
+            padding: 50px 8%;
+        }
+        
+        section h2 {
+            color: var(--accent);
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+        /* CARDS */
+        
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 16px rgba(100, 255, 218, 0.25);
+        }
+        /* GRID */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        /* LIST */
+        
+        ul {
+            padding-left: 18px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        /* SKILLS TAGS */
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tag {
+            background: #0f2b4d;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+        /* CONTACT */
+        
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 14px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        /* FOOTER */
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        /* ANIMATION */
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* RESPONSIVE */
+        
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            header {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NN</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Neha Nichanametla</h2>
+            <h3>Student | Aspiring Software Developer</h3>
+            <p>
+                Dedicated and ambitious student at Audisankara College of Engineering and Technology, eager to apply academic knowledge to real-world challenges and grow as a software professional.
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Profile</h2>
+        <div class="card">
+            Proactive and collaborative ECE student seeking practical experience in software development. Passionate about problem-solving, programming, and continuous learning.
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card">
+                <strong>B.Tech (ECE)</strong><br> Audisankara College of Engineering and Technology<br> 2023 – 2026 | Gudur, AP
+            </div>
+            <div class="card">
+                <strong>Diploma (ECE)</strong><br> Chaitanya Bharathi Institute of Technology<br> 2020 – 2023 | Proddatur, AP
+            </div>
+            <div class="card">
+                <strong>SSC</strong><br> Sri Chaitanya Techno School<br> 2019 – 2020 | Kadapa, AP
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="card">
+            <div class="skill-tags">
+                <span class="tag">C</span>
+                <span class="tag">Java</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Internship</h2>
+        <div class="card">
+            <strong>Software Development Trainee – Kodnest</strong><br> July 2025 – Present
+            <ul>
+                <li>Training in Java, SQL, and Data Structures.</li>
+                <li>Hands-on practice with CRUD operations, joins, and constraints.</li>
+                <li>Exposure to real-world software development workflows.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <strong>Password Door Lock System</strong>
+                <p>Secure access control system enhancing safety and protection.</p>
+            </div>
+            <div class="card">
+                <strong>ATM Interface</strong>
+                <p>Console-based ATM system with banking operations.</p>
+            </div>
+            <div class="card">
+                <strong>Online Reservation System</strong>
+                <p>Platform enabling real-time ticket and seat booking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications & Workshops</h2>
+        <div class="card">
+            <ul>
+                <li>Java – OASIS INFOBYTE</li>
+                <li>Web Development – CODTECH IT SOLUTIONS</li>
+                <li>IoT – NPTEL</li>
+                <li>AI Business Intelligence Analyst – NSDC</li>
+                <li>Startup & Industry-Ready Skills Workshop</li>
+                <li>Personality Development Workshop</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Open to internships and learning opportunities.</p>
+        <a href="mailto:nehanichanametla@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/nichanametla-neha-1379602ab" target="_blank">LinkedIn</a>
+        <a href="https://github.com/NICHANAMETLA" target="_blank">GitHub</a>
+        <p style="margin-top:8px;">📞 +91 7207062005</p>
+    </section>
+
+    <footer>
+        © 2026 Neha Nichanametla
+    </footer>
+
+</body>
+
+</html>
